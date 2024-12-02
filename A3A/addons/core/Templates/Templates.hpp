@@ -1499,4 +1499,26 @@ class Templates
         shortName = "FIA";
         lore = $STR_A3A_templates_lore_FIA;
     };
+
+    // ***************************** HAFM *****************************
+
+    class HAFM_Base
+    {
+        requiredAddons[] = {"HAFM_Acc"};       
+        basepath = QPATHTOFOLDER(Templates\Templates\HAFM);
+        logo = "IDK"; // needs adding
+        priority = 70; // what this even mean?
+    };
+
+    class HAFM_Arid : HAFM_Base
+    {
+        side = "Occ";
+        flagTexture = "a3\data_f\flags\flag_us_co.paa";
+        name = "HAFM Arid";
+        file = "HAFM_AI_HAFM_Arid";
+        climate[] = {"Arid"};
+        shortName = "HAFM";
+        lore = $STR_A3A_templates_lore_HAFM_AI_HAFM; //needs adding
+    };
+
 };
